@@ -1,0 +1,24 @@
+<h2>Edit Task</h2>
+<form method="POST" action="/tasks/update/<%= task.id %>">
+                <label>Date:</label>
+                <input type="date" name="date" value="<%= task.date %>" required>
+                <label>Description:</label>
+                <textarea name="task_description" required><%= task.task_description %></textarea>
+                <label>Due Date:</label>
+                <input type="date" name="due_date" value="<%= task.due_date %>">
+                <label>Task Type:</label>
+                <select name="task_type">
+                                <option value="routine" <%=task.task_type==='routine' ? 'selected' : '' %>>Routine
+                                </option>
+                                <option value="development" <%=task.task_type==='development' ? 'selected' : '' %>
+                                                >Development</option>
+                </select>
+                <label>Status:</label>
+                <select name="status">
+                                <option value="pending" <%=task.status==='pending' ? 'selected' : '' %>
+                                                >Pending</option>
+                                <option value="completed" <%=task.status==='completed' ? 'selected' : '' %>>Completed
+                                </option>
+                </select>
+                <button type="submit">Update</button>
+</form>

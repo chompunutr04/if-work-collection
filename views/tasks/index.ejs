@@ -1,0 +1,33 @@
+<h2>Task List</h2>
+<a href="/tasks/new">Add New Task</a>
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Date</th>
+      <th>Due</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% tasks.forEach(task=> { %>
+    <tr>
+      <td><%= task.task_description %></td>
+      <td><%= task.date %></td>
+      <td><%= task.due_date %></td>
+      <td><%= task.status %></td>
+      <td>
+        <a href="/tasks/edit/<%= task.id %>">Edit</a>
+        <form
+          action="/tasks/delete/<%= task.id %>"
+          method="POST"
+          style="display: inline"
+        >
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

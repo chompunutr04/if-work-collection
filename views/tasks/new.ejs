@@ -1,0 +1,20 @@
+<h2>Add New Task</h2>
+<form method="POST" action="/tasks">
+                <label>Date:</label>
+                <input type="date" name="date" required>
+                <label>Description:</label>
+                <textarea name="task_description" required></textarea>
+                <label>Due Date:</label>
+                <input type="date" name="due_date">
+                <label>Task Type:</label>
+                <select name="task_type">
+                                <option value="routine">Routine</option>
+                                <option value="development">Development</option>
+                </select>
+                <label>Status:</label>
+                <select name="status">
+                                <option value="pending">Pending</option>
+                                <option value="completed">Completed</option>
+                </select>
+                <button type="submit">Save</button>
+</form>
