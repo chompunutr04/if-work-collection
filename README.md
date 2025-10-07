@@ -60,21 +60,21 @@ Staff can record daily/weekly tasks, attach files, and generate simple reports f
    http://localhost:3000
 
 ## 📁 Example Project Structure
-
-IF_Data/
-  controllers/
-  middleware/
-  routes/
-  views/
-  public/
-    css/
-    js/
-    images/
-    uploads/attachment/
-  database.js
-  index.js
-  package.json
-  .env
-  README.md
+   ```bash
+   IF_Data/
+     controllers/
+     middleware/
+     routes/
+     views/
+     public/
+     css/
+     js/
+     images/
+       uploads/attachment/
+     database.js
+     index.js
+     package.json
+     .env
+   README.md
 
 
