@@ -40,7 +40,7 @@ Staff can record daily/weekly tasks, attach files, and generate simple reports f
   - Run any provided SQL scripts or create tables according to the schema.
 
 4. Create a .env file (example):
-    ```bash
+    ```ini
     PORT=3000
     DB_HOST=localhost
     DB_USER=root
@@ -56,11 +56,11 @@ Staff can record daily/weekly tasks, attach files, and generate simple reports f
    node index.js
 
 6. Open in browser:
-   ```bash
+   ```arduino
    http://localhost:3000
 
 ## 📁 Example Project Structure
-   ```bash
+   ```pgsql
    IF_Data/
      controllers/
      middleware/
